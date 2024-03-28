@@ -31,7 +31,8 @@ img{
 /* header */
 header{
     min-height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(/image/Tokyo-background.jpg);
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(image/Thailand-background.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -66,8 +67,8 @@ header{
     font-weight: 500;
     display: inline-block;
     color: #ffff;
-    padding: 0.4rem 0.1rem;
-    letter-spacing: 3px;
+    padding: 0.4rem 1rem;
+    letter-spacing: 2px;
     transition: opacity 0.5s ease;
 }
 
@@ -132,4 +133,108 @@ header{
     border: none;
     outline: 0;
     cursor: pointer;
+}
+
+/* gallery */
+.gallery{
+    padding: 4.5rem 0;
+}
+
+.title{
+    text-align: center;
+}
+
+.title h2{
+    font-family: var(--Quicksand);
+    font-size: 2.4rem;
+}
+
+.title p{
+    text-transform: uppercase;
+    padding: 0.6rem 0;
+}
+
+.gallery-content{
+    margin: 2rem 0;
+}
+
+.gallery-item{
+    cursor: pointer;
+    margin: 1.5rem 0;
+}
+
+.gallery-img{
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-img::after{
+    position: relative;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+}
+
+.gallery-img img{
+    transition: all 0.5 ease;
+}
+
+.gallery-item:hover img{
+    transform: scale(1.2);
+}
+
+.gallery-img span:first-of-type{
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    padding: 0.25rem 1rem;
+}
+
+.gallery-img span:last-of-type{
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.photo-title{
+   padding: 1rem;
+   font-size: 1.2rem;
+   text-align: center;
+   width: 70%;
+   margin: 0 auto;
+}
+
+.photo-title p{
+    text-transform: capitalize;
+    font-family: var(--Quicksand);
+}
+
+@media screen and (min-width: 540px) {
+    
+}
+
+@media screen and (min-width: 768px) {
+    .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .search-input{
+        padding: 0.8rem 0;
+    }
+    .gallery-content{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
 }
