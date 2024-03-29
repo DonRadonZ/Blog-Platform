@@ -17,9 +17,42 @@ body{
     color: #36454F;
 }
 
+
+
 img{
     width: 100%;
     display: block;
+}
+
+
+
+.form .checkbox-text{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.checkbox-text .checkbox-content{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-content input{
+    margin: 0 8px -2px 4px;
+    accent-color: #4070f4;
+}
+
+.form .text{
+    color: #333;
+    font-size: 14px;
+}
+
+.form a.text{
+    text-decoration: none;
+}
+
+.form a:hover{
+    text-decoration: underline;
 }
 
 .container{
@@ -226,6 +259,84 @@ header{
     max-width: 1200px;
     width: 100%;
 }
+
+
+/* login and register site */
+
+.body-login{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #33B864; 
+}
+
+.body-login .login-register-container{
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0, 0.5);
+}
+
+.login-register-container .form{
+    padding: 30px; 
+}
+
+.login-register-container .form .title{
+    
+    position: relative;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.form .input-field{
+    
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.input-field input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    font-size: 16px;
+}
+
+.form .button{
+    margin-top: 30px;
+}
+
+.form a.text{
+    color: #4070f4;
+    text-decoration: none;
+}
+.form a.text:hover{
+    text-decoration: underline;
+}
+
+.form .button input{
+    color: #fff;
+    letter-spacing: 1px;
+    background-color: #1AA1A1;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.form .login-signup{
+    margin-top: 30px;
+    text-align: center;
+}
+
 
 @media screen and (min-width: 540px) {
     .card-grid{
