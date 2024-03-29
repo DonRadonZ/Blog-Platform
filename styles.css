@@ -218,8 +218,19 @@ header{
     font-family: var(--Quicksand);
 }
 
+.card-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    max-width: 1200px;
+    width: 100%;
+}
+
 @media screen and (min-width: 540px) {
-    
+    .card-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -236,5 +247,14 @@ header{
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
     }
+    .card-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
 
+    .card{
+        list-style: none;
+        position: relative;
+    }
+
+    
 }
