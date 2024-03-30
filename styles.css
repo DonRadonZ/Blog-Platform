@@ -62,7 +62,7 @@ img{
 }
 
 /* header */
-header{
+.main{
     min-height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(image/Thailand-background.jpg);
     background-size: cover;
@@ -231,7 +231,7 @@ header{
 .gallery-img span:last-of-type{
     position: absolute;
     z-index: 1;
-    bottom: 10px;
+    bottom: 60px;
     right: 10px;
     color: #fff;
     font-weight: 700;
@@ -261,7 +261,116 @@ header{
 }
 
 
+/* blog */
+.blog{
+    background: #f9f9f9;
+    padding:  4.5rem 0;
+}
+
+.blog-content{
+    margin: 2rem 0;
+}
+
+.blog-img{
+    position: relative;
+}
+
+.blog-text{
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+}
+
+.blog-text span{
+    font-weight: 300;
+    display: block;
+    padding-bottom: 0.5rem;
+}
+
+.blog-text h2{
+    font-family: var(--Quicksand);
+    padding: 1rem 0;
+    font-size: 1.65rem;
+    font-weight: 500;
+}
+
+.blog-text p{
+    font-weight:  300;
+    font-size: 1.1rem;
+    opacity: 0.9;
+    padding-bottom: 1.2rem;
+}
+
+.blog-text a{
+    font-family: var(--Sarabun);
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: inline-block;
+    background: #1AA1A1;
+    color: #fff;
+    padding: 0.55rem 1.2rem;
+    transition: all 0.5s ease-in-out;
+    border-radius: 16px;
+}
+
+.blog-text a:hover{
+    
+    color: #000;
+}
+
+/* about */
+.about{
+    padding: 4.5rem 0;
+}
+.about-text{
+    margin: 2rem 0;
+}
+
+.about-text > p{
+    font-size: 1.1rem;
+    padding: 0.6rem 0;
+}
+
+/* footer */
+footer{
+    background: #008080;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+}
+
+.social a{
+    border: 2px solid #fff;
+    color: #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.social a:hover{
+    color: #fff;
+    background: #000;
+}
+
+footer span{
+    margin-top: 1rem;
+    letter-spacing: 1px;
+}
 /* login and register site */
+
 
 .body-login{
     height: 100vh;
@@ -282,6 +391,11 @@ header{
 
 .login-register-container .form{
     padding: 30px; 
+}
+
+.login-register-container .forms a{
+    margin-left: 20px;
+    
 }
 
 .login-register-container .form .title{
@@ -340,6 +454,22 @@ header{
 
 
 @media screen and (min-width: 540px) {
+    .navbar-nav a{
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+
+    .banner-title{
+        font-size: 2.5rem;
+    }
+    
+    .banner form{
+        margin-top: 1.4rem;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .card-grid{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -357,8 +487,27 @@ header{
     .gallery-content{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
+        gap: 1rem;
     }
+
+    .photo-title{
+        padding: 1rem;
+        font-size: 0.9rem;
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+     }
+    .gallery-img span:last-of-type{
+    
+        position: absolute;
+        z-index: 1;
+        bottom: 60px;
+        right: 10px;
+        color: #fff;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+
     .card-grid{
         grid-template-columns: repeat(3, 1fr);
     }
@@ -368,5 +517,35 @@ header{
         position: relative;
     }
 
+    .blog-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem
+    }
     
+}
+
+@media screen and(min-width: 992px) {
+    .blog-content{
+        grid-template-columns: (3, 1fr);
+    }
+
+    .about{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 3rem;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .gallery-img span:last-of-type{
+        position: absolute;
+        z-index: 1;
+        bottom: 60px;
+        right: 10px;
+        color: #fff;
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
 }
