@@ -317,6 +317,22 @@ img{
     color: #000;
 }
 
+/* blog page */
+
+.blog-banner{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background: #e7e7e7;
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-message{
+    
+    padding:  1.5rem 0;
+}
+
 /* about */
 .about{
     padding: 4.5rem 0;
