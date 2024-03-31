@@ -319,19 +319,98 @@ img{
 
 /* blog page */
 
-.blog-banner{
+.blog-container{
+    width: 96%;
+    max-width: 117rem;
+    margin: 0 auto;
+}
+
+.hero{
+    max-width: 30rem;
+    height: 40rem;
+    background: url(/image/PARIS-post.jpg) no-repeat center;
+    margin: 2.5rem auto;
+}
+
+main{
     width: 100%;
-    height: 400px;
-    position: relative;
-    background: #e7e7e7;
-    background-size: cover;
-    background-position: center;
+    max-width: 20rem;
+    background-color: #f9f9f9;
+    margin: 0 auto;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    margin-top: -15rem;
+}
+
+main h2{
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+main .blog-profile-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+main .blog-profile-container .blog-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* main .blog-profile-container .blog-profile .img-container{
+   width: 6rem;
+   height: 6rem;
+} */
+
+main .blog-profile-container .blog-profile .text{
+   margin: 0 1rem;
+   color: #5b5963;
+   font-size: 0.75rem;
+   font-weight: 400;
+   letter-spacing: 1px;
+}
+
+.blog-profile .text h3{
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.button{
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    padding: 0.3rem 1.5rem;
+    background-color: #008080;
+    border-radius: 0.2rem;
+}
+
+.button p{
+    color: #fff;
+}
+
+main .content p{
+    color: #5b5963;
+    margin: 1rem 0;
 }
 
 .blog-message{
     
     padding:  1.5rem 0;
 }
+
+main .content h4{
+   font-size: 1.4rem;
+   font-weight: 600;
+   color: #5b5963;
+   margin: 2rem 0;
+}
+
+
 
 /* about */
 .about{
@@ -352,6 +431,7 @@ footer{
     color: #fff;
     text-align: center;
     padding: 2rem 0;
+    margin-top: 50px;
     
 }
 
@@ -441,9 +521,19 @@ footer span{
     font-size: 16px;
 }
 
-.form .button{
+.goto-button{
+    text-align: center;
+    background-color: #008080;
+    padding: 10px;
     margin-top: 30px;
 }
+
+.goto-button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
 
 .form a.text{
     color: #4070f4;
@@ -485,6 +575,25 @@ footer span{
         margin-left: auto;
         margin-right: auto;
     }
+
+    /* blog page */
+
+    .hero{
+    max-width: 100rem;
+    height: 40rem;
+    background: url(/image/PARIS-post.jpg) no-repeat center;
+    margin: 2.2rem auto;
+}
+
+main{
+    width: 100%;
+    max-width: 32.5rem;
+    background-color: #f9f9f9;
+    margin: 0 auto;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    margin-top: -15rem;
+}
 
     .card-grid{
         grid-template-columns: repeat(2, 1fr);
@@ -538,6 +647,16 @@ footer span{
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem
     }
+
+    main{
+    width: 100%;
+    max-width: 42.5rem;
+    background-color: #f9f9f9;
+    margin: 0 auto;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    margin-top: -15rem;
+}
     
 }
 
@@ -552,7 +671,17 @@ footer span{
         column-gap: 3rem;
         align-items: center;
     }
+
+    .hero{
+    max-width: 50rem;
+    height: 40rem;
+    background: url(/image/PARIS-post.jpg) no-repeat center;
+    margin: 2.5rem auto;
 }
+
+
+}
+
 
 @media screen and (min-width: 1200px) {
     .gallery-img span:last-of-type{
@@ -564,4 +693,21 @@ footer span{
         font-weight: 700;
         font-size: 1.1rem;
     }
+
+    main h2{
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+    main{
+    width: 100%;
+    max-width: 80rem;
+    background-color: #f9f9f9;
+    margin: 0 auto;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    margin-top: -15rem;
+}
 }
