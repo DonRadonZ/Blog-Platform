@@ -411,7 +411,6 @@ main .content h4{
 }
 
 
-
 /* about */
 .about{
     padding: 4.5rem 0;
@@ -425,6 +424,107 @@ main .content h4{
     padding: 0.6rem 0;
 }
 
+/* blog-editor page */
+
+.editor-banner{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background: #e7e7e7;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-upload-btn{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.blog-post{
+    width: 70vw;
+    min-width: 400px;
+    height: 100px;
+    display: block;
+    margin: auto;
+    padding: 50px 0;
+}
+
+textarea::-webkit-scrollbar{
+    width: 10px;
+} 
+
+textarea::-webkit-scrollbar-thumb{
+    background: rgba(0,0,0,0.1);
+}
+
+.blog-title,.blog-article{
+    width: 100%;
+    height: 100%;
+    height: auto;
+    outline: none;
+    font-size: 50px;
+    font-family: 600;
+    color:#2d2d2d;
+    resize: none;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.blog-title::placeholder,
+.blog-article::placeholder{
+    color: #2d2d2d;
+}
+
+.blog-article{
+    height: 500px;
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    padding-bottom: 100px;
+}
+
+.blog-option{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-dark{
+ border: none;
+ outline: none;
+ color: #fff;
+ background: #000;
+ cursor: pointer;
+ padding: 10px;
+ border-radius: 50px;
+}
+
+
+.blog-btn-grey{
+    background: #a5a5a5;
+    color: #fff;
+    margin-left: 20px;
+    font-size:14px;
+    padding: 10px;
+ border-radius: 50px;
+}
 /* footer */
 footer{
     background: #008080;
@@ -558,6 +658,63 @@ footer span{
     text-align: center;
 }
 
+
+/* profile page */
+.profile-title{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.profile-title h2{
+    font-family: var(--Quicksand);
+    font-size: 3.6rem;
+}
+
+
+
+.blog-text .edit-btn{
+    background-color: grey;
+}
+
+.blog-text .delete-btn{
+    background-color: red;
+}
+
+.add-button{
+    text-align: center;
+    border: 10px solid #008080;
+    padding: 200px;
+    align-items: center;
+}
+
+.add-button a{
+    font-size: 2.5rem;
+    color: black;
+    text-decoration: none;
+}
+
+.add-button a:hover{
+
+    text-decoration: underline;
+}
+
+.add-photo{
+    text-align: center;
+    border: 10px solid #008080;
+    
+}
+
+.add-photo a{
+    font-size: 2.5rem;
+    color: black;
+    text-decoration: none;
+    
+}
+
+.add-photo a:hover{
+
+    text-decoration: underline;
+}
 
 @media screen and (min-width: 540px) {
     .navbar-nav a{
@@ -709,5 +866,11 @@ main{
     padding: 3rem;
     border-radius: 1.5rem;
     margin-top: -15rem;
+}
+
+.add-photo{
+    text-align: center;
+    border: 10px solid #008080;
+    padding-top: 100px;
 }
 }
