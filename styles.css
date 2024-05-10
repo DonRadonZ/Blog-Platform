@@ -429,7 +429,9 @@ main .content h4{
 }
 
 .comment-container{
-    width: 650px;
+    /* background-color: red; */
+    max-width: 100%;
+    width: 400px;
     height: auto;
     margin: 0 auto;
     margin-top: 20px;
@@ -446,9 +448,12 @@ main .content h4{
     overflow: hidden;
 }
 
+
+
+
 .comment-list .name{
     text-decoration: underline;
-    margin-right: 525px;
+    margin-right: 225px;
 }
 
 .post-comment .comment{
@@ -462,7 +467,8 @@ main .content h4{
 
 .comment-box textarea{
     background: #eee;
-    width: 100%;
+    max-width: 100%;
+    width: 400px;
     height: 152px;
     margin: 10px 0;
     border: none;
@@ -837,6 +843,20 @@ main{
     .card-grid{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .comment-container{
+        width: 500px;    
+    }
+
+    .comment-list .name{
+        text-decoration: underline;
+        margin-right: 300px;
+    }
+
+    .comment-box textarea{
+        background: #eee;
+        width: 500px; 
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -898,6 +918,20 @@ main{
 }
     .blog-img img{
     height: 300px;
+}
+
+.comment-container{
+    width: 725px;    
+}
+
+.comment-list .name{
+    text-decoration: underline;
+    margin-right: 550px;
+}
+
+.comment-box textarea{
+    background: #eee;
+    width: 700px; 
 }
 }
 
@@ -963,4 +997,50 @@ main{
 .blog-img img{
     height: 500px;
 }
+
+.comment-container{
+    /* background-color: red; */
+    max-width: 100%;
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+
+.comment-list .name{
+    text-decoration: underline;
+    margin-right: 1100px;
+}
+
+.comment-box textarea{
+    background: #eee;
+    width: 1400px; 
+}
+}
+
+@media screen and (min-width: 1440px) {
+
+    .comment-container{
+        /* background-color: red; */
+        max-width: 100%;
+        width: 1300px;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    
+    
+    
+    .comment-list .name{
+        text-decoration: underline;
+        margin-right: 1100px;
+    }
+    
+    .comment-box textarea{
+        background: #eee;
+        width: 1300px; 
+    }
+    
 }
